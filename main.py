@@ -62,10 +62,10 @@ def get_min_path(paths):
     return min_path
 
 
-def input_valid_cell(param):
+def input_valid_cell(cell_name):
     while True:
         try:
-            target_cell = tuple(map(int, input(f"Set coordinates of {param}:").split()))
+            target_cell = tuple(map(int, input(f"Set coordinates of {cell_name}:").split()))
         except ValueError:
             print("Cell is not ocean.")
             continue
